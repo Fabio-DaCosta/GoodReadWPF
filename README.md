@@ -1,7 +1,7 @@
 # GoodReadsWPF
 The main goal of this app is to improve my C# and WPF skills and experiment with packages.
 
-A desktop application to keep track of books that help you keep track of books that you're currently reading and have read.
+A desktop application to help you keep track of books that you're currently reading and have read.
 
 # Features
 
