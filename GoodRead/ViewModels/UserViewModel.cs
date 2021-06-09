@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GoodRead.MVVM.ViewModel
+namespace GoodRead.ViewModels
 {
     public class UserViewModel
     {

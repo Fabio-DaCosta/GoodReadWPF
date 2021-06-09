@@ -13,14 +13,14 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace GoodRead.MVVM.View
+namespace GoodRead.Views
 {
     /// <summary>
-    /// Interaction logic for UserView.xaml
+    /// Interaction logic for HomeView.xaml
     /// </summary>
-    public partial class UserView : UserControl
+    public partial class HomeView : UserControl
     {
-        public UserView()
+        public HomeView()
         {
             InitializeComponent();
         }

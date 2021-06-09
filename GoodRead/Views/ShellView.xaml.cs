@@ -10,17 +10,16 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace GoodRead.MVVM.View
+namespace GoodRead.Views
 {
     /// <summary>
-    /// Interaction logic for HomeView.xaml
+    /// Interaction logic for ShellView.xaml
     /// </summary>
-    public partial class HomeView : UserControl
+    public partial class ShellView : Window
     {
-        public HomeView()
+        public ShellView()
         {
             InitializeComponent();
         }
