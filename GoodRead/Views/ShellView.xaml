@@ -39,13 +39,15 @@
                              Foreground="White"
                              FontSize="14"
                              Style="{StaticResource MenuButtonTheme}"
-                             IsChecked="True"/>
+                             IsChecked="True"
+                             x:Name = "HomeView"/>
 
                 <RadioButton Content="User"
                              Height="50"
                              Foreground="White"
                              FontSize="14"
-                             Style="{StaticResource MenuButtonTheme}"/>
+                             Style="{StaticResource MenuButtonTheme}"
+                             x:Name = "UserView"/>
 
                 <RadioButton Content="Home"
                              Height="50"
