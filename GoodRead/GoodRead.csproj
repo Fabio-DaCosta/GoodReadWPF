@@ -97,6 +97,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Views\LoginView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\ShellView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -115,9 +119,15 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Helpers\OnLoginAttemptMessage.cs" />
+    <Compile Include="Helpers\PasswordBoxHelper.cs" />
     <Compile Include="Migrations\202106011612081_Init.cs" />
     <Compile Include="Migrations\202106011612081_Init.designer.cs">
       <DependentUpon>202106011612081_Init.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202106101925330_AddRequiredFiels.cs" />
+    <Compile Include="Migrations\202106101925330_AddRequiredFiels.designer.cs">
+      <DependentUpon>202106101925330_AddRequiredFiels.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Book.cs" />
@@ -125,10 +135,14 @@
     <Compile Include="Models\GoodReadsDB.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="ViewModels\HomeViewModel.cs" />
+    <Compile Include="ViewModels\LoginViewModel.cs" />
     <Compile Include="ViewModels\ShellViewModel.cs" />
     <Compile Include="ViewModels\UserViewModel.cs" />
     <Compile Include="Views\HomeView.xaml.cs">
       <DependentUpon>HomeView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\LoginView.xaml.cs">
+      <DependentUpon>LoginView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\ShellView.xaml.cs">
       <DependentUpon>ShellView.xaml</DependentUpon>
@@ -151,6 +165,9 @@
     </Compile>
     <EmbeddedResource Include="Migrations\202106011612081_Init.resx">
       <DependentUpon>202106011612081_Init.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202106101925330_AddRequiredFiels.resx">
+      <DependentUpon>202106101925330_AddRequiredFiels.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

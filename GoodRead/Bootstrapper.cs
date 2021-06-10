@@ -1,4 +1,5 @@
 ﻿using Caliburn.Micro;
+using GoodRead.Helpers;
 using GoodRead.ViewModels;
 using System;
 using System.Collections.Generic;
@@ -7,6 +8,7 @@ using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
+using System.Windows.Controls;
 
 namespace GoodRead
 {
@@ -16,6 +18,11 @@ namespace GoodRead
         public Bootstrapper()
         {
             Initialize();
+
+            ConventionManager.AddElementConvention<PasswordBox>(
+                PasswordBoxHelper.BoundPasswordProperty,
+                "Password",
+                "PasswordChanged");
         }
 
         protected override void Configure()
